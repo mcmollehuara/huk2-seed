@@ -5,10 +5,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
 
-
-
-// import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 /*
  * App Component
  * Top Level Component
@@ -19,16 +15,14 @@ import { AppState } from './app.service';
   styleUrls: [
     './app.component.css'
   ],
-  templateUrl:"./app.component.html"
+  templateUrl:"app.html"  
 })
 export class AppComponent {
-  constructor(
-    public appState: AppState) {
-
+  constructor(public appState: AppState) {
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+    
   }
 
 }

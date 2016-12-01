@@ -1,36 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
-import { UserInfo } from './user-info';
-import { Application } from './application';
-
-import { UserInfoService } from './user-info.service';
-
 @Component({
   selector: '[navbar]',
   templateUrl: './navbar.html',
-  providers: [UserInfoService]
+  providers: []
 })
 export class NavbarComponent implements OnInit {
-
-  userInfo: UserInfo;
-  applications: Application[];
-
-  fullName: string;
-  userName: string;
-
-  constructor(private userInfoService: UserInfoService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.getUserInfo();
-  }
-
-  getUserInfo(): void {
-
-   
-  }
-
-  public logout() {
-
   }
 }
