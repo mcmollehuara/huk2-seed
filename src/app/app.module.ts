@@ -40,9 +40,9 @@ type StoreType = {
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [
-    AppComponent
+    AppComponent,
     // AboutComponent,
-    // HomeComponent,
+    HomeComponent,
     // NoContentComponent,
     // XLarge
   ],
